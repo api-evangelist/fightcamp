@@ -1,7 +1,14 @@
 aid: fightcamp
 name: Fightcamp
-description: 'Fightcamp is a company surfaced as a portfolio company of ivp and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'FightCamp is a consumer connected-fitness company that sells an at-home
+  boxing and kickboxing training system combining physical equipment (a free-standing
+  bag, quick-wrap gloves, and Bluetooth motion-tracking punch trackers) with a subscription
+  app of on-demand classes led by professional fighters. The trackers use motion sensors
+  and AI to measure punch output, speed, and workout stats, syncing to a member app
+  and customer dashboard for progress tracking. FightCamp is a direct-to-consumer
+  hardware-plus-membership business (backed by IVP) and does not publish a public
+  developer API; this profile captures its public web, commerce, support, and domain-security
+  surface for the API Evangelist network.'
 url: https://raw.githubusercontent.com/api-evangelist/fightcamp/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,12 +16,30 @@ x-backed-by:
 - ivp
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://cdn.joinfightcamp.com/images/og/fc-og-2025.jpg
 tags:
 - Company
 - Consumer
+- Fitness
+- Connected Fitness
+- Boxing
+- Wearables
+- Health
+- Direct to Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +47,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/fightcamp-domain-security.yml
 - type: Website
   url: https://joinfightcamp.com
+- type: Blog
+  url: https://blog.joinfightcamp.com
+- type: Support
+  url: https://fightcamp.zendesk.com/hc/en-us
+- type: Pricing
+  url: https://joinfightcamp.com/shop
+- type: SignUp
+  url: https://account.joinfightcamp.com
+- type: TermsOfService
+  url: https://joinfightcamp.com/legal-terms/
+- type: PrivacyPolicy
+  url: https://joinfightcamp.com/privacy-policy/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
